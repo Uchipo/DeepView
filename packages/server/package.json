@@ -1,0 +1,30 @@
+{
+    "name": "server",
+    "version": "0.1.0",
+    "main": "app.ts",
+    "private": true,
+    "scripts": {
+        "dev": "nodemon",
+        "build": "tsc -b",
+        "start": "nodemon app.ts",
+        "lint": "eslint \"src/**/*.ts\" --fix"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "express-validator": "^7.2.1",
+        "http-status-codes": "^2.3.0",
+        "jsonwebtoken": "^9.0.2",
+        "mysql2": "^3.13.0"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.17",
+        "@types/node": "^18.17.18",
+        "@typescript-eslint/eslint-plugin": "^6.5.1",
+        "@typescript-eslint/parser": "^6.5.1",
+        "eslint": "^8.42.0",
+        "nodemon": "^3.0.1",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.1.6"
+    }
+}
