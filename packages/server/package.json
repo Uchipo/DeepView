@@ -1,12 +1,13 @@
 {
-    "name": "server",
+    "name": "@deepview/server",
     "version": "0.1.0",
     "main": "app.ts",
     "private": true,
+    "type": "module",
     "scripts": {
-        "dev": "nodemon",
+        "dev": "nodemon --config ./nodemon.json",
         "build": "tsc -b",
-        "start": "nodemon app.ts",
+        "start": "nodemon --config ./nodemon.json",
         "lint": "eslint \"src/**/*.ts\" --fix"
     },
     "dependencies": {
@@ -24,7 +25,7 @@
         "@typescript-eslint/parser": "^6.5.1",
         "eslint": "^8.42.0",
         "nodemon": "^3.0.1",
-        "ts-node": "^10.9.1",
+        "ts-node": "^10.9.2",
         "typescript": "^5.1.6"
     }
 }

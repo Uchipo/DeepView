@@ -1,0 +1,6 @@
+{
+    "watch": ["src"],
+    "ext": "ts,json",
+    "ignore": ["dist"],
+    "exec": "node --import ./ts-node-register.js src/app.ts"
+}

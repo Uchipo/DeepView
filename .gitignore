@@ -1,4 +1,7 @@
 package-lock.json
+packages/*/node_modules/
+packages/*/dist/
+packages/*/build
 node_modules/
 .env
 

@@ -2,18 +2,24 @@
   "name": "deepview",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-    "dev:server": "npm --workspace server run dev",
-    "dev:client": "npm --workspace client run dev",
+    "dev:server": "npm --workspace=@deepview/server run dev",
+    "dev:client": "npm --workspace=@deepview/client run dev",
     "build": "npm run build:server && npm run build:client",
-    "build:server": "npm --workspace server run build",
-    "build:client": "npm --workspace client run build",
+    "build:server": "npm --workspace @deepview/server run build",
+    "build:client": "npm --workspace @deepview/client run build",
     "lint": "eslint \"packages/**/*.{ts,tsx}\" --fix",
-    "start": "concurrently  \"cd packages/client && npm --workspace client start\" \"cd packages/server && npm --workspace server start\""
+    "start": "concurrently  \"cd packages/client && npm --workspace @deepview/client start\" \"cd packages/server && npm --workspace @deepview/server start\"",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "eslint": "^8.x"
   },
   "repository": {
     "type": "git",
@@ -24,10 +30,5 @@
   "bugs": {
     "url": "https://github.com/Uchipo/DeepView/issues"
   },
-  "homepage": "https://github.com/Uchipo/DeepView#readme",
-  "dependencies": {
-    "concurrently": "^8.2.2",
-    "eslint": "^8.x",
-    "prettier": "^2.x"
-  }
+  "homepage": "https://github.com/Uchipo/DeepView#readme"
 }

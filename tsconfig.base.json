@@ -1,14 +1,13 @@
 {
   "files": [],
-  "references": [
-    { "path": "packages/server" },
-    { "path": "packages/client" }
-  ],
   "compilerOptions": {
-    "composite": true,
     "baseUrl": ".",
     "paths": {
       "@shared/*": ["packages/shared/*"]
-    }
+    },
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "composite": true
   }
 }
