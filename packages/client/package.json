@@ -4,10 +4,6 @@
   "main": "app.ts",
   "private": true,
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^3.1.1",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
@@ -18,8 +14,15 @@
     "@types/react-dom": "^19.1.2",
     "@types/react-router-dom": "^5.3.3",
     "axios": "^1.9.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^7.6.0",
+    "react-scripts": "5.0.1",
+    "remark-gfm": "^4.0.1",
     "styled-components": "^6.1.17",
     "tsc": "^2.0.4",
+    "web-vitals": "^3.1.1",
     "zustand": "^5.0.4"
   },
   "scripts": {
